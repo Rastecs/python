@@ -18,14 +18,20 @@ def twice(func, value):
     value: argument passed to the function"""
     func(value)
     func(value)
+
 def print_twice(value):
     """function prints twice
     value: anything printable"""
     print(value)
-    print(value)
-twice(print_twice, 'sam')
+    #print(value)
+#twice(print_twice, 'sam')
+
 def print_four(func, value):
     """gunction to print four times
     func: function object
     value: argument to the function"""
-    
+    twice(func, value)
+    twice(func, value)
+
+twice(print_twice, 'Rastecs')
+print_four(print, 'rastecs')
